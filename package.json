@@ -1,0 +1,40 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "Código curso Webpack",
+  "main": "src/index.js",
+  "scripts": {
+    "dev-foo": "webpack --mode development --entry ./foo/src/index.js --output-path ./foo/dist",
+    "build-foo": "webpack --mode production --entry ./foo/src/index.js --output-path ./foo/dist",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode development --open --port 3000"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Juan López",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.10",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.1.0",
+    "mini-css-extract-plugin": "^2.5.2",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
